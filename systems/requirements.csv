@@ -1,0 +1,13 @@
+id,subsystem,requirement,acceptance_criterion,verification,status
+SYS-001,system,Autonomous cold-swap sequence,TBD,integrated test,planned
+SYS-002,system,Log every attempt and failure,100% attempts recorded,data audit,specified
+DOC-001,docking,Constrain UAV position and orientation,TBD,metrology,planned
+ROB-001,robot,Reach transfer poses within joint limits,TBD,simulation and CAD,partial
+ROB-002,robot,Avoid collision with drone,TBD,collision analysis,planned
+GRP-001,gripper,Retain battery during removal,TBD,inert load test,planned
+BAT-001,battery,Provide keyed cartridge interface,TBD,fit test,planned
+CHG-001,charging,Charge only when battery safe,qualified BMS checks,electrical review,planned
+SAF-001,safety,Prevent arm motion when rotors active,independent interlock,fault injection,planned
+SAF-002,safety,Stop safely on E-stop or power loss,defined safe state,bench test,planned
+AUT-001,software,Abort on timeout and sensor disagreement,TBD,unit/integration test,planned
+VAL-001,validation,Report failures and durations transparently,all attempts counted,dataset audit,specified

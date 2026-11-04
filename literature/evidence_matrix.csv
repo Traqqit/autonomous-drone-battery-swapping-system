@@ -1,0 +1,4 @@
+id,year,title,url,type,evidence,status
+L001,2026,Autonomous Charging and Battery Swapping for Unmanned Aerial Vehicles: A Review,https://doi.org/10.1002/aisy.70584,review,method comparison,seed
+L002,2024,Automatic Jig-Assisted Battery Exchange for Lightweight Drones,https://doi.org/10.3390/machines12110818,experimental,prototype under two minutes,seed
+L003,2025,University battery swapping prototype,internal university report,prototype,12/20 replica swaps,baseline

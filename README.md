@@ -1,63 +1,44 @@
-# Autonomous Drone Battery Swapping System
+# Autonomous UAV Battery Swapping and Charging — Full Research Program
+**Collaborative ongoing research:** Irungu Josphat Macharia and Israel Nyakoe Maragia  
+**Repository owner (proposed):** [Traqqit](https://github.com/Traqqit)  
+**Research stage:** Historical proof-of-concept + computational baseline; integrated next-generation system is planned, not yet validated.
 
-**University project companion and proposed robotic-arm simulation**
+## Mission
+Design, simulate, fabricate, integrate and experimentally validate an autonomous UAV battery exchange and charging station that improves docking tolerance, reliability, cycle time, safety and maintainability.
 
-This repository documents a cold-swapping drone battery prototype described in the
-uploaded January 2025 university report, and separately provides an **original
-illustrative Python/MATLAB model** for a proposed articulated-arm upgrade.
+## Evidence boundaries
+**Demonstrated in the 2025 university report:** 2-DOF Arduino-controlled prototype, magnetic battery handling, battery carousel, replica drone/batteries, 20 trials, 12 successes (60%), approximately 90 seconds per successful swap. No live charging or real drone tests.
 
-## Reported university prototype (not reproduced by the simulation)
-- Two-degree-of-freedom robotic arm and magnetic claw
-- Carousel-like battery holding platter
-- Arduino-controlled sequence
-- 3D-printed drone and battery replicas
-- Reported average swap time: **90 seconds**
-- Reported reliability: **60%** in preliminary tests
+**Currently runnable in this repository:** illustrative 4R forward kinematics, joint interpolation, sequence logic, workspace sampling, baseline trial analysis, Python tests and MATLAB demonstration.
 
-These are **report-reported measurements**, not results produced by the scripts here.
-The original prototype used replica batteries; this repository does not claim live
-charging or successful operation on a flight-ready UAV.
+**Planned, not completed:** physical 4R robot, gripper, full SolidWorks/Inventor assembly, perception, flight-controller interface, electrical charging hardware, digital twin, integration tests and field trials.
 
-## Proposed simulation (separate from the prototype)
-A simplified 4-revolute-joint arm: base yaw, shoulder pitch, elbow pitch,
-wrist pitch, plus an independently actuated parallel gripper. The planar
-arm chain is rotated about the vertical base axis. It is a kinematic
-demonstration, **not** a collision-free, torque-validated or hardware-ready robot.
+## Research work packages
+| ID | Package | Outputs |
+|---|---|---|
+| WP01 | Research and literature | structured review, gap analysis, hypotheses |
+| WP02 | Requirements and system engineering | requirements, interfaces, traceability, trade studies |
+| WP03 | UAV and battery interface | drone envelope, battery cartridge, access and connector specification |
+| WP04 | Docking and localization | landing fixture, pose sensing, alignment error budget |
+| WP05 | Manipulator and gripper | CAD, kinematics, dynamics, motion and force constraints |
+| WP06 | Storage and charging | inventory logic, charging architecture, BMS and interlocks |
+| WP07 | Electronics and embedded | schematics, power distribution, firmware and sensors |
+| WP08 | Autonomy and software | state machine, flight/ground interface, recovery, logs |
+| WP09 | Simulation and digital twin | coupled mechanical/control simulation, scenarios |
+| WP10 | Safety, risk and reliability | hazard log, FMEA, safe-state validation |
+| WP11 | Experiments and statistics | protocols, raw datasets, repeatability, KPIs |
+| WP12 | Manufacturing, economics and publication | BOM, assembly, costing, reproducibility, papers |
 
-## Quick start (Python 3.10+)
-```bash
-python -m pip install -r requirements.txt
-python examples/demo.py
-python -m unittest discover -s tests -v
-```
-Outputs a plot at `examples/robot_trajectory.png` and prints representative
-end-effector positions and swap-state transitions.
+## Start here
+1. Read `research/MASTER_RESEARCH_PLAN.md` and `systems/requirements.csv`.
+2. Agree on one target UAV and battery cartridge before committing to dimensions.
+3. Run `python -m pip install -r requirements.txt`.
+4. Run `python -m unittest discover -s tests -v`.
+5. Run `python examples/demo.py`, `python examples/analyze_baseline.py`, and `python examples/workspace_sample.py`.
+6. Open GitHub issues from `research/WORK_PACKAGES.md` and assign package leads.
+7. Capture all test evidence using `experiments/TEMPLATE.md`.
 
-## MATLAB
-Run `matlab/demo_trajectory.m` from MATLAB. It implements the same joint
-convention and sample motion using core MATLAB functions.
+## Repository conventions
+Every research claim must be labeled **historical measured**, **new measured**, **simulation**, **assumption**, or **target**. Every subsystem must trace to a requirement and verification method. Avoid publishing full university report or third-party CAD until permissions are confirmed. Licensing is pending joint agreement.
 
-## CAD
-See `cad/README.md`. Native SolidWorks parts/assembly and verified Inventor
-joints are **not included**. The original reference image is not a dimensioned
-manufacturing drawing.
-
-## Project status
-- [x] Forward kinematics
-- [x] Joint interpolation
-- [x] Simplified swapping state machine
-- [x] Unit tests
-- [x] MATLAB kinematic demonstration
-- [ ] Verified CAD geometry and Inventor motion joints
-- [ ] Measured motor torques, sensor feedback, safety interlocks
-- [ ] Validated battery insertion and charging hardware
-
-## Sources and attribution
-See `docs/sources.md`. The uploaded university report is a source of project
-context, not evidence that these particular scripts were written or used during
-the original project. Do not represent generated example scripts as historical
-university submissions.
-
-## License
-No software license has been selected. Add a LICENSE file only after the
-project authors agree on permissions and any third-party assets are reviewed.
+See `ROADMAP.md`, `CONTRIBUTING.md`, `AUTHORS.md`, `research/`, `systems/`, `safety/`, and `experiments/`.

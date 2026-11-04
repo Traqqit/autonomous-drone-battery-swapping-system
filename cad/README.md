@@ -1,17 +1,28 @@
-# CAD integration
+# CAD — proposed advanced arm
 
-Target visual: compact white articulated robot with black base, orange tool
-adapter and opposing black gripper jaws, based on the user's supplied reference.
+The supplied reference image depicts a white/black articulated arm with a
+dark mounting plate, cylindrical base, rounded links, circular joint housings,
+orange tool mount and parallel-jaw gripper. It is a **visual reference only**.
 
-The Python/MATLAB simulation uses these **illustrative** joint-to-joint lengths:
-- Upper arm: 285 mm
-- Forearm: 250 mm
-- Wrist/tool: 95 mm
-- Shoulder elevation: 300 mm
+Proposed kinematic chain:
+- J1 base yaw: full rotation in the kinematic model
+- J2 shoulder pitch
+- J3 elbow pitch
+- J4 wrist pitch
+- G1 symmetric parallel-jaw opening
 
-Joint convention: J1 yaw around global Z; J2 shoulder pitch, J3 elbow pitch,
-J4 wrist pitch in the arm's vertical plane; G1 independent jaw opening.
+**Illustrative model dimensions, not measured from the image:**
+upper 285 mm, forearm 250 mm, tool 95 mm, shoulder height 300 mm.
 
-These are not measured dimensions from the photograph or the university report.
-Native SolidWorks/Inventor assemblies and CAD motion constraints are not included.
-Do not imply that an imported mesh automatically preserves articulated joints.
+**Historical 2025 prototype (different mechanism):**
+upper arm 120 mm, forearm 90 mm (Table 3.2 of university report).
+
+Future CAD deliverables:
+`Base.SLDPRT`, `Waist.SLDPRT`, `Shoulder.SLDPRT`,
+`UpperArm.SLDPRT`, `Forearm.SLDPRT`, `Wrist.SLDPRT`,
+`Gripper.SLDPRT`, `LeftJaw.SLDPRT`, `RightJaw.SLDPRT`,
+and `RobotArm.SLDASM`. These files are NOT yet generated.
+
+Import into Autodesk Inventor may preserve geometry but does not guarantee
+transfer of native SolidWorks mates. Verify/recreate motion joints in Inventor.
+Continuous base rotation in hardware requires a designed cable/actuator solution.
