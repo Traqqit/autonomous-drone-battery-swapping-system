@@ -37,6 +37,7 @@ Design, simulate, fabricate, integrate and experimentally validate an autonomous
 5. Run `python examples/demo.py`, `python examples/analyze_baseline.py`, and `python examples/workspace_sample.py`.
 6. Open GitHub issues from `research/WORK_PACKAGES.md` and assign package leads.
 7. Capture all test evidence using `experiments/TEMPLATE.md`.
+8. Run the first integrated simulation with `python examples/integrated_swap.py` and read `docs/REPOSITORY_AUDIT_AND_DEVELOPMENT_PLAN.md`.
 
 ## Repository conventions
 Every research claim must be labeled **historical measured**, **new measured**, **simulation**, **assumption**, or **target**. Every subsystem must trace to a requirement and verification method. Avoid publishing full university report or third-party CAD until permissions are confirmed. Licensing is pending joint agreement.
