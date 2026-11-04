@@ -1,6 +1,6 @@
 # Repository Audit and Integrated Development Plan
 
-Status: **In development** (simulation verified for the first integrated slice)
+Status: **In development** (software foundation and deterministic simulation verified)
 
 ## A. Existing-code audit
 
@@ -11,7 +11,7 @@ Status: **In development** (simulation verified for the first integrated slice)
 | Swap sequence | Implemented as prerequisite-checked state list | `swap_sequence.py` | Not a supervisory state machine; no subsystem acknowledgements, timeout, recovery, or telemetry |
 | Historical analysis | Implemented baseline CSV tests and example | `experiments/baseline_2025`, `tests/test_baseline.py` | Historical evidence must remain separated from simulation results |
 | Research/system docs | Present and useful | `research/`, `systems/`, `safety/` | Traceability and verification need linking to executable scenarios |
-| Integrated simulation | Added in this delivery | `integrated_simulation.py`, `examples/integrated_swap.py` | Deterministic mock only; no animation, faults beyond initial gates, or hardware I/O |
+| Integrated simulation | Implemented deterministic end-to-end mock | `integrated_simulation.py`, `examples/integrated_swap.py` | No animation, asynchronous timeouts, or hardware I/O |
 
 The repository contains no native CAD, live UAV, charger, or physical validation implementation. Those remain explicitly planned.
 
@@ -67,4 +67,4 @@ The normal path verifies docking, propulsion inhibition, inventory selection, st
 
 The implementation is simulation-only and uses illustrative dimensions and mocked subsystem acknowledgements. It does not claim charging hardware, UAV autopilot integration, CAD integration, force sensing, or experimental performance. Historical 2025 results remain measured historical evidence and are not mixed with new simulation results.
 
-Known limitations: no asynchronous timeouts, inverse kinematics, collision detection, charger state machine, JSONL persistence, animation, or hardware-rated interlocks. These are tracked in the backlog above.
+Implemented in this delivery: configuration primitives, docking checks, charger lifecycle, safety interlocks, joint/workspace checks, JSONL telemetry, deterministic experiment generation, CI, and 13 automated tests. Remaining limitations: no asynchronous timeouts, inverse kinematics, full collision geometry, animation, or hardware-rated interlocks. These are tracked in the backlog above.

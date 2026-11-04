@@ -1,0 +1,45 @@
+{"event": "service_requested", "evidence_type": "simulation", "state": "WAITING_FOR_UAV", "timestamp": 1793809086.0202262, "trial": 0}
+{"event": "docking_verified", "evidence_type": "simulation", "state": "SAFETY_INTERLOCK_CHECK", "timestamp": 1793809086.0202398, "trial": 0}
+{"event": "robot_homed", "evidence_type": "simulation", "state": "ROBOT_HOMING", "timestamp": 1793809086.020268, "trial": 0}
+{"battery_id": "spent-001", "event": "battery_gripped", "evidence_type": "simulation", "state": "EXTRACT_DEPLETED_BATTERY", "timestamp": 1793809086.0202732, "trial": 0}
+{"battery_id": "spent-001", "event": "battery_stored", "evidence_type": "simulation", "slot": 2, "state": "STORE_DEPLETED_BATTERY", "timestamp": 1793809086.0202794, "trial": 0}
+{"battery_id": "charged-0", "event": "charged_battery_selected", "evidence_type": "simulation", "state": "SELECT_CHARGED_BATTERY", "timestamp": 1793809086.0202842, "trial": 0}
+{"battery_id": "charged-0", "event": "battery_inserted", "evidence_type": "simulation", "state": "INSERT_REPLACEMENT", "timestamp": 1793809086.0202875, "trial": 0}
+{"event": "connection_verified", "evidence_type": "simulation", "state": "FINAL_SYSTEM_CHECK", "timestamp": 1793809086.0202904, "trial": 0}
+{"event": "swap_completed", "evidence_type": "simulation", "state": "SWAP_COMPLETE", "timestamp": 1793809086.0202935, "trial": 0}
+{"event": "service_requested", "evidence_type": "simulation", "state": "WAITING_FOR_UAV", "timestamp": 1793809086.0204213, "trial": 1}
+{"event": "docking_verified", "evidence_type": "simulation", "state": "SAFETY_INTERLOCK_CHECK", "timestamp": 1793809086.020427, "trial": 1}
+{"event": "robot_homed", "evidence_type": "simulation", "state": "ROBOT_HOMING", "timestamp": 1793809086.0204427, "trial": 1}
+{"battery_id": "spent-001", "event": "battery_gripped", "evidence_type": "simulation", "state": "EXTRACT_DEPLETED_BATTERY", "timestamp": 1793809086.0204546, "trial": 1}
+{"battery_id": "spent-001", "event": "battery_stored", "evidence_type": "simulation", "slot": 2, "state": "STORE_DEPLETED_BATTERY", "timestamp": 1793809086.0204585, "trial": 1}
+{"battery_id": "charged-1", "event": "charged_battery_selected", "evidence_type": "simulation", "state": "SELECT_CHARGED_BATTERY", "timestamp": 1793809086.0204623, "trial": 1}
+{"battery_id": "charged-1", "event": "battery_inserted", "evidence_type": "simulation", "state": "INSERT_REPLACEMENT", "timestamp": 1793809086.0204651, "trial": 1}
+{"event": "connection_verified", "evidence_type": "simulation", "state": "FINAL_SYSTEM_CHECK", "timestamp": 1793809086.0204678, "trial": 1}
+{"event": "swap_completed", "evidence_type": "simulation", "state": "SWAP_COMPLETE", "timestamp": 1793809086.020471, "trial": 1}
+{"event": "service_requested", "evidence_type": "simulation", "state": "WAITING_FOR_UAV", "timestamp": 1793809086.0205026, "trial": 2}
+{"event": "docking_verified", "evidence_type": "simulation", "state": "SAFETY_INTERLOCK_CHECK", "timestamp": 1793809086.0205052, "trial": 2}
+{"event": "robot_homed", "evidence_type": "simulation", "state": "ROBOT_HOMING", "timestamp": 1793809086.020513, "trial": 2}
+{"battery_id": "spent-001", "event": "battery_gripped", "evidence_type": "simulation", "state": "EXTRACT_DEPLETED_BATTERY", "timestamp": 1793809086.0205157, "trial": 2}
+{"battery_id": "spent-001", "event": "battery_stored", "evidence_type": "simulation", "slot": 2, "state": "STORE_DEPLETED_BATTERY", "timestamp": 1793809086.0205183, "trial": 2}
+{"battery_id": "charged-2", "event": "charged_battery_selected", "evidence_type": "simulation", "state": "SELECT_CHARGED_BATTERY", "timestamp": 1793809086.0205214, "trial": 2}
+{"battery_id": "charged-2", "event": "battery_inserted", "evidence_type": "simulation", "state": "INSERT_REPLACEMENT", "timestamp": 1793809086.0205235, "trial": 2}
+{"event": "connection_verified", "evidence_type": "simulation", "state": "FINAL_SYSTEM_CHECK", "timestamp": 1793809086.0205252, "trial": 2}
+{"event": "swap_completed", "evidence_type": "simulation", "state": "SWAP_COMPLETE", "timestamp": 1793809086.0205278, "trial": 2}
+{"event": "service_requested", "evidence_type": "simulation", "state": "WAITING_FOR_UAV", "timestamp": 1793809086.0205483, "trial": 3}
+{"event": "docking_verified", "evidence_type": "simulation", "state": "SAFETY_INTERLOCK_CHECK", "timestamp": 1793809086.0205507, "trial": 3}
+{"event": "robot_homed", "evidence_type": "simulation", "state": "ROBOT_HOMING", "timestamp": 1793809086.0205564, "trial": 3}
+{"battery_id": "spent-001", "event": "battery_gripped", "evidence_type": "simulation", "state": "EXTRACT_DEPLETED_BATTERY", "timestamp": 1793809086.0205588, "trial": 3}
+{"battery_id": "spent-001", "event": "battery_stored", "evidence_type": "simulation", "slot": 2, "state": "STORE_DEPLETED_BATTERY", "timestamp": 1793809086.0205615, "trial": 3}
+{"battery_id": "charged-3", "event": "charged_battery_selected", "evidence_type": "simulation", "state": "SELECT_CHARGED_BATTERY", "timestamp": 1793809086.020564, "trial": 3}
+{"battery_id": "charged-3", "event": "battery_inserted", "evidence_type": "simulation", "state": "INSERT_REPLACEMENT", "timestamp": 1793809086.020566, "trial": 3}
+{"event": "connection_verified", "evidence_type": "simulation", "state": "FINAL_SYSTEM_CHECK", "timestamp": 1793809086.020568, "trial": 3}
+{"event": "swap_completed", "evidence_type": "simulation", "state": "SWAP_COMPLETE", "timestamp": 1793809086.0205696, "trial": 3}
+{"event": "service_requested", "evidence_type": "simulation", "state": "WAITING_FOR_UAV", "timestamp": 1793809086.0205941, "trial": 4}
+{"event": "docking_verified", "evidence_type": "simulation", "state": "SAFETY_INTERLOCK_CHECK", "timestamp": 1793809086.0205965, "trial": 4}
+{"event": "robot_homed", "evidence_type": "simulation", "state": "ROBOT_HOMING", "timestamp": 1793809086.0206022, "trial": 4}
+{"battery_id": "spent-001", "event": "battery_gripped", "evidence_type": "simulation", "state": "EXTRACT_DEPLETED_BATTERY", "timestamp": 1793809086.0206041, "trial": 4}
+{"battery_id": "spent-001", "event": "battery_stored", "evidence_type": "simulation", "slot": 2, "state": "STORE_DEPLETED_BATTERY", "timestamp": 1793809086.0206068, "trial": 4}
+{"battery_id": "charged-4", "event": "charged_battery_selected", "evidence_type": "simulation", "state": "SELECT_CHARGED_BATTERY", "timestamp": 1793809086.0206096, "trial": 4}
+{"battery_id": "charged-4", "event": "battery_inserted", "evidence_type": "simulation", "state": "INSERT_REPLACEMENT", "timestamp": 1793809086.0206122, "trial": 4}
+{"event": "connection_verified", "evidence_type": "simulation", "state": "FINAL_SYSTEM_CHECK", "timestamp": 1793809086.0206141, "trial": 4}
+{"event": "swap_completed", "evidence_type": "simulation", "state": "SWAP_COMPLETE", "timestamp": 1793809086.0206165, "trial": 4}
